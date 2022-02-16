@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> SoonGyu Portfolio </title>
+<!-- 스타일 시트 호출 -->
+<link rel="stylesheet" type="text/css" href="common2.css">
+</head>
+<body>
+<!-- 문단을 세로로 묶음 -->
+<div id="contentsArea">
+<div id="titlename" class="qnaBoard">
+<h1> Portfolio 게시판 </h1>
+<p class="allPost">
+전체 <b> 25 </b>개의 게시물
+</p>
+<table class="boardTable">
+<!-- 테이블 제목 -->
+<caption>게시판</caption>
+<!-- 테이블 field 설정 -->
+<thead>
+<tr>
+<th scope="col" class="bbsNumber">번호</th>
+<th scope="col" class="bbsTitle">Portfolio</th>
+<th scope="col" class="bbsAuthor">작성자</th>
+<th scope="col" class="bbsDate">등록일</th>
+<th scope="col" class="bbsHit">조회수</th>
+</tr>
+</thead>
+<!-- 테이블 field명-->
+<tbody>
+<tr>
+<td>1</td>
+<td><a href='https://github.com/LeeSoonGyu/Project4'>사례연구4</a></td>
+<td>Lee SoonGyu</td>
+<td>2021.12.24</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href='https://github.com/LeeSoonGyu/Project5'>사례연구5</a></td>
+<td>Lee SoonGyu</td>
+<td>2021.12.01</td>
+<td>500</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href='https://github.com/LeeSoonGyu/Project6'>사례연구6</a></td>
+<td>Lee SoonGyu</td>
+<td>2021.12.10</td>
+<td>800</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href='#'>cv sample</a></td>
+<td>Lee SoonGyu</td>
+<td>2021.12.22</td>
+<td>77777</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href='#'>html,css sample</a></td>
+<td>Lee SoonGyu</td>
+<td>2021.12.25</td>
+<td>3000</td>
+</tr>
+</tbody>
+</table>
+<center>
+<p class="paging">
+<a href="#" class="btnPrev"> [Prev] </a> 
+<a href="#"><b>1</b></a>
+<a href="#">2</a> 
+<a href="#">3</a>
+<a href="#">4</a> 
+<a href="#">5</a>
+<a href="#" class="btnNext">[Next]</a>
+</p>
+</center>
+</div>
+<div id="infoArea">
+<div class="search">
+<!-- 데이터 처리에 관한 기본 구성 설정 -->
+<form action="#" method="get" id="searchForm" name="searchForm">
+<fieldset>
+<legend> 검색폼 </legend>
+<label for="keyword"> 자료검색 </label> 
+<input type="search" id="keyword" name="keyword" required 
+placeholder="검색어 입력">
+<button type="submit">검색</button>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<head>
+  <meta charset="UTF-8">
+  <title>LeeSoonGyu CV sample</title>
+</head>
+<div class="resume-wrapper">
+	<section class="profile section-padding">
+		<div class="container">
+			<div class="picture-resume-wrapper">
+        <div class="picture-resume">
+        <span><img src="https://postfiles.pstatic.net/MjAyMDAxMThfMjk1/MDAxNTc5Mjc5NzkyMTM3.rOq0CdzNOjfXTxpsxYBcjU9IJJ76zZGl-Ds8fOdxqYIg.nELottGoSiRxOV6WRl6hxrskKf_-bJBceCI1P7RYzUog.JPEG.kwwlju/IMG_1075.jpg?type=w966" alt="img"style="width:200px;height:200px;"> </span>
+      </div>
+         <div class="clearfix"></div>
+ </div>
+      <div class="name-wrapper">
+        <h1>Lee <br/>SoonGyu</h1>
+      </div>
+      <div class="clearfix"></div>
+      <div class="contact-info clearfix">
+      <ul class="list-content">
+          <li>Phone Number <br/>+82 010 1234 5678</li> 
+        	<li>Email <br/>sample@email.com</li>
+        	<li>Portfolio <br/><a href="https://github.com/LeeSoonGyu">Github</a></li>
+        	<li>Address <br/>부평, 인천, 대한민국</li>
+        </ul>
+      <div class="contact-social clearfix">
+        <h3>SNS</h3>
+      	<ul class="list-titles">
+      		<li>Instagram Site <br/><a href="https://www.instagram.com/leesungyu/">instagram</a></li> 
+      		<li>KakaoTalk ID <br/> oooo
+      	</ul>
+      </div>
+		</div>
+	</section>
+  <section class="experience section-padding">
+      <div class="contact-presentation">
+        <h3>About Me</h3>
+      	<p>Data분석가 자라나는 새싹</p>
+        <p>배움의 끝이 없는 자세</p>
+        <p>도전을 좋아하는 자세</p>
+      </div>
+  	<div class="container">
+  		<h3 class="experience-title">Experience</h3>
+      
+      <div class="experience-wrapper">
+      	<div class="company-wrapper clearfix">
+      		<div class="experience-title">DHL Korea</div> 
+          <div class="time">2016.03 ~ 2017.03</div>
+      	</div>
+        
+        <div class="job-wrapper clearfix">
+        	<div class="experience-title">직책</div>
+          <div class="company-description">
+          	<p>해당업무</p>
+          </div>
+        </div>
+        
+        <div class="company-wrapper clearfix">
+      		<div class="experience-title">JEJU Aewol Hotel</div>
+          <div class="time">2017.05 ~ 2020.03</div>
+      	</div>
+        
+         <div class="job-wrapper clearfix">
+        	<div class="experience-title">직책</div>
+          <div class="company-description">
+          	<p>해당업무</p>
+          </div>
+        </div>
+      </div><!--Skill experience-->
+      
+      <div class="section-wrapper clearfix">
+      	<h3 class="section-title">Skill</h3>
+        	<ul>
+        		<li class="skill-percentage">1종보통</li>
+        		<li class="skill-percentage">물류정보관리사2급</li>
+        		<li class="skill-percentage">유통관리사2급</li>
+        		<li class="skill-percentage">소방안전관리사2급</li>
+        		<li class="skill-percentage">R</li>
+        		<li class="skill-percentage">Python</li>
+        		<li class="skill-percentage">Word</li>
+        	</ul>
+      </div>
+   
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Education</h3>
+        <ul class="list-content">
+      	    <li>School : XX High school <br/>time : 2006.03 ~ 2009.02</li>
+      	    <li>University : XX university <br/>time : 2009.03 ~ 2016.08</li>
+      		</ul>
+      </div>
+  	</div>
+  </section>
+  <div class="clearfix"></div>
+</div>
+
+
+<!--css -->
+<style>
+*, *::after, *::before {
+  box-sizing:border-box;
+}
+  html,body {
+  height: 100%;
+  background-color: ivory;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+  line-height:1.5em;
+}
+a{color:$linkColor; text-decoration:none;}
+.clearfix::after, .clearfix::before {
+  content: " ";
+	display: table;
+}
+.clearfix::after{clear:both;}
+.bold {color:$boldColor; font-weight:400;}
+
+.resume-wrapper {
+  position:relative;
+  text-align:center;
+  height:100%;
+}
+
+.container {
+  min-height:600px;
+} 
+
+.profile {
+  background:$profileBg;
+  width:30%;
+  float:left;
+  color:$profileColor;
+  @include breakpoint(brother-bear) { width: 50%; }
+  .name-wrapper {
+    float:left;
+    width:30%;
+  }
+  h1 {
+    font-size:2.5em;
+    text-align:left;
+    font-family: 'Varela Round', sans-serif;
+    color:$boldColor;
+    text-transform:uppercase;
+    line-height:1em;
+    padding-top:40px; 
+    @include breakpoint(mama-bear) {
+       padding-top:20px;
+    }
+    @include breakpoint(baby-bear) {
+      font-size:1.8em;  
+      padding-top:20px;
+    } 
+  }
+  li {
+      margin-bottom:10px;
+    }
+  .picture-resume-wrapper {
+    width:40%;
+    display:block;
+    float:left;
+    @include breakpoint(mama-bear) {
+       width:100%;
+    }
+  }
+  .picture-resume {
+    width:220px;
+    height:220px;
+    background-size:cover;
+    border-radius:50%;
+    margin-right:0px;
+    display:table;
+    position:relative;
+    vertical-align:middle;
+    span {
+        display:table-cell;
+        vertical-align: middle;
+        position:relative;
+        margin:0 auto;
+        z-index:10;
+       text-align:center
+    }
+    img {
+      border-radius:50%;
+      width:130px;
+      @include breakpoint(papa-bear) {
+        width:80px;
+      }
+      @include breakpoint(mama-bear) {
+        width:120px;
+        height:120px;
+      }
+    }
+    @include breakpoint(papa-bear) {
+      width:150px;
+      height:150px;
+    }
+    @include breakpoint(mama-bear) {
+      width:200px;
+      height:200px;
+    }
+     @include breakpoint(baby-bear) { width:180px;height:180px; } 
+  }
+  .contact-info{
+    margin-top:100px;
+    font-weight:300;
+    @include breakpoint(mama-bear) {margin-top:70px; } 
+    @include breakpoint(baby-bear) { margin-top:50px; } 
+  }
+  .list-titles {
+    float:left;
+    text-align:left;
+    font-weight:600;
+    width:40%;
+    color:$boldColor;
+  }
+  .list-content{
+    float:left;
+    width:60%;
+    text-align:left;
+    font-weight:300;
+  }
+  .contact-presentation {
+    text-align:left;
+    font-weight:300;
+    margin-top:100px;
+    margin-bottom:100px;
+    @include breakpoint(mama-bear) {margin-top:70px;margin-bottom:70px; } 
+    @include breakpoint(brother-bear) {margin-top:50px;margin-bottom:50px; } 
+    
+  }
+  .st0, .st1 {
+    fill:#66cc99;
+  }
+}
+.experience {
+  background:$skillsBg;
+  width:50%;
+  float:left;
+  position:relative;
+  color:$skillsColor;
+  font-weight:300;
+  min-height:100%;
+  min-height:50vh;
+  @include breakpoint(brother-bear) { width: 100%; } 
+  h3.experience-title {
+    color:$linkColor;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:400;
+  }
+  .company-wrapper {
+    width:30%;
+    float:left;
+    text-align:left;
+    padding-right:5%;
+    margin-bottom:60px;
+    @include breakpoint(baby-bear) {width:100%; margin-bottom:20px;} 
+  }
+  .job-wrapper {
+    width:70%;
+    float:left;
+    text-align:left;
+    padding-right:5%;
+    margin-bottom:60px;
+    @include breakpoint(baby-bear) {width:100%;margin-bottom:40px;} 
+  }
+  .experience-title {
+      color:white;
+      margin-bottom:15px;;
+    }
+}
+
+.section-padding {
+ padding:60px 60px 40px 40px;
+ @include breakpoint(brother-bear) { padding:80px 15% 40px 10%; }
+ @include breakpoint(baby-bear) { padding:40px 10% 20px 5%; }
+}
+
+.section-wrapper {
+  width:50%;
+  float:left;
+  text-align:left;
+  color:$skillsColor;
+  font-weight:300;
+  margin-bottom:20px;
+  @include breakpoint(baby-bear) {width:100%;}
+  &:nth-child(3){ 
+    padding-right:8%;
+  }
+  h3.section-title {
+    color:$linkColor;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:400;
+  }
+  .skill-percentage {
+    margin-bottom:10px;
+    position:relative;
+    &::after {
+      content:"";
+      width:100%;
+      height:6px;
+      background:$boldColor;
+      display:block;
+      margin-top:3px;
+    }
+    &::before{
+      content:"";
+      height:6px;
+      background:$linkColor;
+      position:absolute;
+      margin-top:3px;
+      bottom:0;
+    }
+}
+</style>
